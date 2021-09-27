@@ -1,4 +1,5 @@
 import React from "react";
+import "./Timer.css";
 
 function Timer({
   currentTimer,
@@ -15,13 +16,18 @@ function Timer({
         <div id="time-left" style={{ fontSize: "100px" }}>
           <span>{clock}</span>
         </div>
-
-        <button id="start_stop" onClick={handlePlayPause}>
-          {isRunning ? "Pause" : "Start"}
-        </button>
-        <button id="reset" onClick={handleReset}>
-          Reset
-        </button>
+      </div>
+      <div className="timer__buttons">
+        <span id="start_stop" onClick={handlePlayPause}>
+          {isRunning ? (
+            <i className="fas fa-pause"></i>
+          ) : (
+            <i className="fas fa-play"></i>
+          )}
+        </span>
+        <span id="reset" onClick={handleReset}>
+          <i className="fas fa-sync-alt"></i>
+        </span>
       </div>
     </>
   );

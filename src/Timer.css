@@ -1,0 +1,24 @@
+.timer {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.timer {
+  border: 7px solid #13353a;
+  border-radius: 50px;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.timer__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-size: 1.5rem;
+}

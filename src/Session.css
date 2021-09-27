@@ -1,0 +1,15 @@
+.session {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.session__buttons {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+}
+
+#session-label {
+  margin-bottom: 0.25em;
+}

@@ -1,0 +1,15 @@
+.break {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.break__buttons {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+}
+
+#break-label {
+  margin-bottom: 0.25em;
+}

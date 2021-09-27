@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Break from "./Break";
 import Session from "./Session";
 import Timer from "./Timer";
+import "./Pomodoro.css";
 
 function Pomodoro() {
   const [breakLength, setBreakLength] = useState(5);
@@ -101,18 +102,19 @@ function Pomodoro() {
   return (
     <>
       <h1>Pomodoro Clock</h1>
+      <div className="labels">
+        <Break
+          breakDecrement={handleBreakDecrement}
+          breakIncrement={handdleBreakIncrement}
+          breakLength={breakLength}
+        />
 
-      <Break
-        breakDecrement={handleBreakDecrement}
-        breakIncrement={handdleBreakIncrement}
-        breakLength={breakLength}
-      />
-
-      <Session
-        sessionDecrement={handleSessionDecrement}
-        sessionIncrement={handleSessionIncrement}
-        sessionLength={sessionLength}
-      />
+        <Session
+          sessionDecrement={handleSessionDecrement}
+          sessionIncrement={handleSessionIncrement}
+          sessionLength={sessionLength}
+        />
+      </div>
 
       <Timer
         currentTimer={currentTimer}

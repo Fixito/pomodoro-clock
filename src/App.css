@@ -10,4 +10,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #1e555c;
+  color: #fff;
+  font-family: sans-serif;
 }
