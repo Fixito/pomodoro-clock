@@ -1,6 +1,20 @@
-# INPROGESS
+<h1 align="center">
+  Pomodoro Clock
+</h1>
 
-# Getting Started with Create React App
+<div align="center">
+  <h3>
+    <a href="https://pomodoro-clock-tr.netlify.app/">
+      Demo
+    </a>
+  </h3>
+</div>
+
+# Overview
+
+![screenshot](/overview.png)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
